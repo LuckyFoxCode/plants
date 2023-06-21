@@ -1,0 +1,28 @@
+@import './core/colors';
+@import './core/fonts';
+@import './core/media';
+@import './core/mixins';
+@import './core/vars';
+@import './common';
+
+.button {
+  width: 100%;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include text(16px, 400, $DARK);
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid $ORANGE;
+  border-radius: 10px;
+  background-color: $WHITE;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 26px;
+  cursor: pointer;
+
+  &:hover {
+    color: $WHITE;
+    background-color: $ORANGE;
+  }
+}
